@@ -37,17 +37,7 @@ class UserController {
     }  
 
     async login(req, res) { 
-        // const { email, password } = req.body;
-        // const user = await User.findOne({ where: { email } });
-        // if (!user) {
-        //     return res.status(401).json({ error: 'User not found' });
-        // }
-        // const isPasswordValid = await user.checkPassword(password);
-        // if (!isPasswordValid) {
-        //     return res.status(401).json({ error: 'Invalid password' });
-        // }
-        // const { id, name, email } = user;
-        // return res.json({ id, name, email });
+        const {email, password} = req.body
     }
     async check(req, res, next) {
         const {id} = req.query
