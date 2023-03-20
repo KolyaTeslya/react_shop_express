@@ -3,7 +3,7 @@ const router = new Router()
 const typeController = require('../controllers/typeController');
 
 router.post('/', typeController.create)
-router.get('/', typeController.getAll)
+router.get('/', typeController.getAll) //get all
 
 
 module.exports = router
